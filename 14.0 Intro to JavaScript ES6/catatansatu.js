@@ -63,7 +63,8 @@ x -= y; // 2
 x *= y; // 15
 x /= y; // 1.66
 
-var a = 16 % 4; /* 0
+var a = 16 % 4; //0
+/* 
 Operasi "16 % 4" adalah operasi modulo,
 yang menghasilkan sisa dari pembagian bilangan pertama (16) dengan bilangan kedua (4). 
 Dalam kasus ini, ketika 16 dibagi dengan 4, tidak ada sisa yang tersisa karena 16 adalah kelipatan dari 4. Dengan demikian, hasilnya adalah 0.
@@ -73,4 +74,6 @@ Dalam matematika, jika Anda membagi 16 dengan 4, Anda akan mendapatkan hasil yan
 //What does y equal?
 var x = 3;
 var y = x++;
-y += 1; // 4 (Bukan 5 karena += 1 jadi hasilnya 4)
+y += 1; // 4 (Hasilnya bukan 5 karena += 1 jadi hasilnya 4)
+
+// ----------------------------------------------------------------
