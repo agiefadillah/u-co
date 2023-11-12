@@ -1,0 +1,12 @@
+body {
+  background-color: antiquewhite;
+}
+
+.big-title {
+  font-size: 10rem;
+  color: green;
+}
+
+.margin-50 {
+  margin: 50px;
+}
