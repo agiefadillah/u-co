@@ -1,0 +1,55 @@
+git init
+
+ls-a || buat liat
+
+git status
+
+git add [nama file] || dimasukkan ke status
+
+git commit -m "[komen]" || buat commit sm komen
+
+git log || buat liat history yg sudah di commit
+
+git add . || buat dimasukkan semua
+
+git diff || buat check apa bedanya sm versi sebelumnya
+
+jadi misalnya sudah pernah update disuatu file
+tapi mau kembali lagi pake file yg lama yg udah disimpan di git
+bisa pakai command
+git checkout [nama file]
+
+jadi command ini ngasih tau git local kalo mau buat repositori remot
+terus pengen transfer semua kesana
+origin itu cuman nama remote (bebas tpi klo bisa itu terus aja), commandnya
+git remote add origin [link github]
+
+kode ini buat ngepush (upload) ke github
+git push -u [remote name] [branch name]
+commandnya
+git push -u origin main
+
+buat file yg gamau di upload
+jadi di touch dulu (dibikin dulu), baru command .gitignore
+terus masuk ke filenya
+commandnya:
+touch .gitignore
+
+command buka .gitignore 
+open -a /Application/Visual\ Studio\ Code.app .gitignore
+
+undo file yg udah keupload ke git, commandnya
+git rm --cached -r .
+
+ignore filenya itu ditulis nama filenya apa aja di file .gitignore
+misal isi didalam .gitignore
+.DS_Store
+secret.txt
+
+stepnya:
+git init
+git touch .gitignore
+git add .
+git commit -m "[komen]" || git commit -m "Initial"
+git remote add origin [link github]
+git push -u origin [nama branch]
